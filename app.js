@@ -1,31 +1,41 @@
 function askname() {
     var name = prompt("What is your name?")
-    return alert(`Hello, ${name}`)
+    return name
 }
 
 alert(askname())
 
 function convert() {
-    var conv = prompt("Would you like to convert from `c` or `f`")
-    return alert("Ok.")
+    var conv = prompt("What temperature unit would you like to convert from `c` or `f`?")
+    return conv
 }
 
 alert(convert())
 
-function enter(a) {
-    var entert = prompt("Ok what temperature would you like to convert from?")
-    return alert(`Ok, ${entert} degrees is...`)
+
+function ctof(a) {
+    var t =((a - 32) * 5) / 9
+    return t
 }
 
-alert (enter())
-
-function ctof() {
-    entert - 32 * 5 / 9
+function ftoc(b) {
+    var f = b * 9 / 5 + 32
+    return f
 }
 
+function enter() {
+    var entert = prompt("Enter a degree:")
+        if(convert == "c") {
+            return t
+        }
 
-function ftoc() {
-    entert * 9 / 5 + 32
+        else if(convert == "f") {
+            return f
+        }
+
 }
+
+alert(enter())
+
 
 
