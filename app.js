@@ -33,6 +33,8 @@ function enter() {
             return f
         }
 
+    return entert
+
 }
 
 alert(enter())
